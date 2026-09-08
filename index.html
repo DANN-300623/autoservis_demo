@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Naziv auto servisa] — Auto servis</title>
+<meta name="description" content="[Naziv auto servisa] — servis i održavanje vozila. Mali i veliki servis, dijagnostika, kočnice, klima uređaji i auto elektrika.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#glavni-sadrzaj">Preskoči na sadržaj</a>
+
+<header class="site-header" id="vrh">
+  <div class="container header-inner">
+    <a href="#vrh" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">[Naziv auto servisa]</span>
+    </a>
+
+    <nav class="main-nav" id="glavna-navigacija" aria-label="Glavna navigacija">
+      <ul>
+        <li><a href="#vrh">Početna</a></li>
+        <li><a href="#usluge">Usluge</a></li>
+        <li><a href="#proces">Proces</a></li>
+        <li><a href="#galerija">Galerija</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:" class="phone-chip" aria-label="Pozovite servis, [Telefon]">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg>
+        <span>[Telefon]</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="glavna-navigacija" aria-label="Otvori meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="glavni-sadrzaj">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Auto servis</p>
+      <h1 class="hero-title reveal">[Naziv auto servisa]</h1>
+      <p class="hero-subtitle reveal">Održavanje i servis vozila, organizovani do detalja — od prvog pregleda do poslednjeg koraka.</p>
+      <div class="hero-cta reveal">
+        <a href="#kontakt" class="btn btn-primary">Zakažite servis</a>
+        <a href="tel:" class="btn btn-outline">Pozovite servis</a>
+      </div>
+      <p class="hero-phone reveal">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg>
+        <span>[Telefon]</span>
+      </p>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- USLUGE -->
+  <section class="section" id="usluge">
+    <div class="container">
+      <p class="section-eyebrow reveal">Šta radimo</p>
+      <h2 class="section-title reveal">Usluge</h2>
+
+      <div class="cards-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v4M4.2 6.2l2.8 2.8M20.8 6.2 18 9M3 14h4M17 14h4M6.2 20.8 9 18M17.8 20.8 15 18M8 14a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"/></svg>
+          </div>
+          <h3>Mali servis</h3>
+          <p>Redovna kontrola i zamena osnovnih potrošnih delova radi urednog funkcionisanja vozila.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10M6 4v3M18 4v3M6 17v3M14 17v3"/></svg>
+          </div>
+          <h3>Veliki servis</h3>
+          <p>Detaljan pregled i servisiranje ključnih sistema vozila u jednom terminu.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-8 2 4h4"/></svg>
+          </div>
+          <h3>Dijagnostika</h3>
+          <p>Očitavanje grešaka i provera rada elektronskih sistema pomoću dijagnostičke opreme.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+          </div>
+          <h3>Servis kočnica</h3>
+          <p>Provera, održavanje i zamena komponenti kočionog sistema.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9Z"/></svg>
+          </div>
+          <h3>Servis klima uređaja</h3>
+          <p>Kontrola i servisiranje sistema klimatizacije vozila.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+          </div>
+          <h3>Auto elektrika</h3>
+          <p>Dijagnostika i popravka električnih instalacija i komponenti vozila.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAŠTO MI -->
+  <section class="section section-alt" id="zasto-mi">
+    <div class="container">
+      <p class="section-eyebrow reveal">Pristup radu</p>
+      <h2 class="section-title reveal">Zašto mi</h2>
+
+      <div class="benefits-grid">
+        <div class="benefit reveal">
+          <span class="benefit-index">01</span>
+          <h3>Jasna komunikacija</h3>
+          <p>Objašnjavamo šta se radi i zašto, bez nepotrebnog stručnog žargona.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-index">02</span>
+          <h3>Precizna dijagnostika</h3>
+          <p>Utvrđivanje uzroka problema pre nego što predložimo rešenje.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-index">03</span>
+          <h3>Dogovor pre popravke</h3>
+          <p>Obim posla se usaglašava sa vama pre početka servisa.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-index">04</span>
+          <h3>Pregledan proces servisa</h3>
+          <p>Svaki korak servisa je jasno strukturiran i lako se prati.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="section" id="proces">
+    <div class="container">
+      <p class="section-eyebrow reveal">Kako izgleda servis</p>
+      <h2 class="section-title reveal">Proces</h2>
+
+      <ol class="process-steps">
+        <li class="process-step reveal">
+          <span class="step-number">01</span>
+          <h3>Pregled</h3>
+          <p>Inicijalna provera stanja vozila i evidentiranje primedbi.</p>
+        </li>
+        <li class="process-step reveal">
+          <span class="step-number">02</span>
+          <h3>Dijagnostika</h3>
+          <p>Detaljna analiza uzroka problema pomoću odgovarajuće opreme.</p>
+        </li>
+        <li class="process-step reveal">
+          <span class="step-number">03</span>
+          <h3>Dogovor</h3>
+          <p>Usaglašavanje obima radova i narednih koraka pre početka servisa.</p>
+        </li>
+        <li class="process-step reveal">
+          <span class="step-number">04</span>
+          <h3>Servis</h3>
+          <p>Izvođenje servisa u skladu sa dogovorenim planom.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GALERIJA -->
+  <section class="section section-alt" id="galerija">
+    <div class="container">
+      <p class="section-eyebrow reveal">Radionica</p>
+      <h2 class="section-title reveal">Galerija</h2>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"><span>[Fotografija radionice]</span></div>
+        <div class="gallery-item gallery-item--tall reveal"><span>[Fotografija vozila]</span></div>
+        <div class="gallery-item reveal"><span>[Fotografija servisa]</span></div>
+        <div class="gallery-item reveal"><span>[Fotografija servisa]</span></div>
+        <div class="gallery-item gallery-item--tall reveal"><span>[Fotografija radionice]</span></div>
+        <div class="gallery-item reveal"><span>[Fotografija vozila]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-grid" aria-hidden="true"></div>
+    <div class="container cta-inner">
+      <h2 class="reveal">Zakažite termin</h2>
+      <p class="reveal">Za dodatne informacije i zakazivanje, kontaktirajte servis telefonom ili putem forme.</p>
+      <div class="hero-cta reveal">
+        <a href="#kontakt" class="btn btn-primary">Zakažite termin</a>
+        <a href="tel:" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg>
+          <span>[Telefon]</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Javite nam se</p>
+      <h2 class="section-title reveal">Kontakt</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>[Naziv auto servisa]</h3>
+          <ul class="info-list">
+            <li>
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>Ulica, broj, grad</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg>
+              <span>[Telefon]</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              <span>[Email]</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              <span>Radno vreme: [Radno vreme]</span>
+            </li>
+          </ul>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="ime">Ime</label>
+              <input type="text" id="ime" name="ime" autocomplete="name" placeholder="Vaše ime i prezime" required>
+            </div>
+            <div class="form-row">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="Broj telefona" required>
+            </div>
+            <div class="form-row">
+              <label for="poruka">Poruka</label>
+              <textarea id="poruka" name="poruka" rows="4" placeholder="Opišite ukratko šta vam je potrebno" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Pošaljite poruku</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="map-placeholder reveal" role="img" aria-label="Ovde ide Vaša adresa">
+          <div class="map-grid" aria-hidden="true"></div>
+          <svg viewBox="0 0 24 24" class="map-pin" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Ovde ide Vaša adresa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">[Naziv auto servisa]</span>
+      <p>Ulica, broj, grad</p>
+      <p>[Telefon] · [Email]</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigacija u podnožju">
+      <ul>
+        <li><a href="#vrh">Početna</a></li>
+        <li><a href="#usluge">Usluge</a></li>
+        <li><a href="#proces">Proces</a></li>
+        <li><a href="#galerija">Galerija</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 [Naziv auto servisa]</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
