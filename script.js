@@ -61,9 +61,10 @@
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
-  /* ---------- Contact form (front-end only, no backend configured) ---------- */
+  /* ---------- Contact form (povezana sa Apps Script) ---------- */
   var form = document.getElementById("contactForm");
   var status = document.getElementById("formStatus");
+  var POGON_SCRIPT_URL = "PASTE_TVOJ_APPS_SCRIPT_WEB_APP_URL_OVDE";
 
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -74,8 +75,32 @@
         return;
       }
 
-      status.textContent = "Hvala! Poruka je spremna za slanje — povežite formu sa željenim servisom za prijem poruka (email/CRM).";
-      form.reset();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var podaci = {
+        ime: form.ime.value,
+        telefon: form.telefon.value,
+        email: form.email.value,
+        poruka: form.poruka.value,
+      };
+
+      submitBtn.disabled = true;
+      status.textContent = "Slanje u toku...";
+
+      fetch(POGON_SCRIPT_URL, { method: "POST", body: JSON.stringify(podaci) })
+        .then(function (res) { return res.json(); })
+        .then(function (res) {
+          submitBtn.disabled = false;
+          if (res.uspesno) {
+            status.textContent = "Hvala! Proverite svoj mejl.";
+            form.reset();
+          } else {
+            status.textContent = res.poruka || "Došlo je do greške. Pokušajte ponovo.";
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          status.textContent = "Došlo je do greške pri slanju. Proverite konekciju.";
+        });
     });
   }
 })();
