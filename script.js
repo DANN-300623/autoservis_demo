@@ -64,7 +64,7 @@
   /* ---------- Contact form (povezana sa Apps Script) ---------- */
   var form = document.getElementById("contactForm");
   var status = document.getElementById("formStatus");
-  var POGON_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwT_zyVH6Lh-Kxn5_soMChDnHNi3ZRwlYcmKSKwdwNP6iYzV-a4F6hI5_VYVQ3jkH6UlQ/execs";
+  var POGON_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwT_zyVH6Lh-Kxn5_soMChDnHNi3ZRwlYcmKSKwdwNP6iYzV-a4F6hI5_VYVQ3jkH6UlQ/exec";
 
   if (form) {
     form.addEventListener("submit", function (e) {
