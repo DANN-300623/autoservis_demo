@@ -245,14 +245,16 @@
             </li>
           </ul>
 
+          <div style="margin-bottom:24px;padding:14px 18px;background:rgba(255,255,255,.04);border-left:2px solid var(--accent, #d97b3f);border-radius:6px;font-size:13px;line-height:1.6;color:var(--text-soft, #999);">Ovo je demo prikaz — test verzija kontakt forme. Poruka se ne prosleđuje pravom servisu, pa nije potrebno da unosite tačan broj telefona. U polje za ime i email upišite svoje prave podatke — na taj email ćemo Vam odgovoriti, da vidite kako sistem radi.</div>
+
           <form class="contact-form" id="contactForm" novalidate>
             <div class="form-row">
               <label for="ime">Ime</label>
               <input type="text" id="ime" name="ime" autocomplete="name" placeholder="Vaše ime i prezime" required>
             </div>
             <div class="form-row">
-              <label for="telefon">Telefon</label>
-              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="Broj telefona" required>
+              <label for="telefon">Telefon <span style="opacity:.6;font-weight:400;">(opciono)</span></label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="Broj telefona">
             </div>
             <div class="form-row">
               <label for="email">Email</label>
@@ -264,7 +266,7 @@
             </div>
             <div class="form-row form-consent">
               <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;font-weight:400;">
-                <input type="checkbox" id="privacyConsent" name="privacyConsent" required style="margin-top:3px;flex-shrink:0;">
+                <input type="checkbox" id="privacyConsent" name="privacyConsent" required style="margin-top:3px;flex-shrink:0;width:auto;padding:0;border:none;background:none;">
                 <span>Slažem se sa <a href="demo-privatnost.html" target="_blank">Politikom privatnosti</a> — email/podaci se koriste isključivo za odgovor na ovaj upit, ni u koje druge svrhe.</span>
               </label>
             </div>
