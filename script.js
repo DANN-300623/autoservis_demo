@@ -87,10 +87,20 @@
       status.textContent = "Slanje u toku...";
 
       fetch(POGON_SCRIPT_URL, { method: "POST", body: JSON.stringify(podaci) })
-        .then(function (res) { return res.json(); })
+        .then(function (res) {
+          return res.json().catch(function () {
+            // odgovor je stigao, ali ga browser ne moze da procita (poznat
+            // Apps Script CORS/redirect problem) - ovo NIJE prava greska,
+            // samo ne mozemo sa sigurnoscu da potvrdimo rezultat
+            return { neizvesno: true };
+          });
+        })
         .then(function (res) {
           submitBtn.disabled = false;
-          if (res.uspesno) {
+          if (res.neizvesno) {
+            status.textContent = "Poslato. Ako ne dobijete mejl za par minuta, pokušajte ponovo.";
+            form.reset();
+          } else if (res.uspesno) {
             status.textContent = "Hvala! Proverite svoj mejl.";
             form.reset();
           } else {
@@ -98,6 +108,7 @@
           }
         })
         .catch(function () {
+          // ovo je STVARAN mrezni problem - fetch uopste nije uspeo da posalje
           submitBtn.disabled = false;
           status.textContent = "Došlo je do greške pri slanju. Proverite konekciju.";
         });
